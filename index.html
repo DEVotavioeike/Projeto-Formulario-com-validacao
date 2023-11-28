@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/reponsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="textos">
+        <h2>FICOU COM DÚVIDA? <br> NOS MANDE UMA MENSAGEM!</h2>
+        <p>caso tenha ficado com qualquer dúvida <br>
+            basta nos mandar uma mensagem e <br>
+            entraremos em contato em menos de 24h.</p>
+    </div>
+    <div class="container-cadastro">
+        <main class="cadastro">
+            <form id="formulario" action="#" method="GET">
+                <br>
+                <input type="text" name="nome" class="container-input1" placeholder="Nome completo *" oninput="verificarNome()">
+                <p class="campo-obrigatorio">Digite um nome valido</p>
+                <input type="text" name="Email" class="container-input1" placeholder="Email *" oninput="verificarEmail()">
+                <p class="campo-obrigatorio">Digete um e-mail valido</p>
+                <input type="number" name="Telefone" class="container-input1" placeholder="Telefone *" oninput="verificarTelefone()">
+                <p class="campo-obrigatorio">Digite um telefone valido</p>
+                <textarea class="container-input2" name="Mensagem" placeholder="Mensagem *"   
+                oninput="verificarMensagem()" rows="4" cols="40"></textarea>
+                <p class="campo-obrigatorio">Digite sua dúvida</p>
+                <p id="mensagem-obrigatorio">*campos obrigatorios</p>
+                <input id="botao-enviar" type="submit"/>
+            </form>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

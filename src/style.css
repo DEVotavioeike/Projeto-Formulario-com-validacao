@@ -1,0 +1,115 @@
+body{
+    background: url(imagens/bg-repeat.jpg);
+    background-size: contain;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    min-width: 1200px;
+}
+
+.textos{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 0px 50px;
+}
+
+.textos h2{
+    font-weight: 900;
+    margin-bottom: 11px ;
+    font-size: 40px;
+}
+
+.textos p{
+    font-weight: 400;
+    margin-right: 200px;
+    font-size: 20px;
+    
+}
+
+.container-cadastro{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro{
+    width: 50%;
+    height: 574px;
+    background-color: white;
+    border-radius: 10px;    
+    padding: 0px 25px;
+    box-shadow: 5px 15px 37px 0px rgba(0, 0, 0, 0.5); 
+}
+
+.container-input1{
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.container-input1:hover{
+    border: 2px solid #e56493;
+    transition: 0.4s;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container-input2{
+    width: 100%;
+    height: 195px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 14px 20px;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+    border: 2px black inset ;
+}
+
+.container-input2:hover{
+    border: 2px solid #e56493;
+    transition: 0.4s;
+}
+
+#mensagem-obrigatorio{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#botao-enviar{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: #67cb57;
+}
+
+#botao-enviar:hover{
+    border: 2px solid #000000;
+    transition: 0.3s;
+}
+
+#botao-enviar:active{
+    border: 2px solid #757edd;
+    transition: 0.3s;
+}
+
+.campo-obrigatorio{
+    color: #F52E2E;
+    font-size: 14px;  
+    visibility: hidden;
+}
+
